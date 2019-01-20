@@ -34,16 +34,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: {
+          loader: 'html-loader'
+        }
+      },
+      {
         test: /\.mjs$/,
         include: /node_modules/,
         type: 'javascript/auto'
       },
       {
-        test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+        test: /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2)(\?.*)?$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: '[path][name].[ext]'
+            name: '[name].[ext]'
           }
         }
       },

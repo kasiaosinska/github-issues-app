@@ -1,5 +1,171 @@
-$body-color: green;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin-ext');
 
 body {
-  color: $body-color;
+  background: url("../assets/background.jpg") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
+#app {
+  width: 650px;
+  height: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border-radius: 10px;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+  width: 150px;
+  height: 500px;
+  background: rgba(16, 16, 34, 0.9);
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+
+  .sidebar__action-buttons {
+    height: 40px;
+    padding: 16px 15px 14px;
+    display: flex;
+    background-color: #101022;
+    border-top-left-radius: 10px;
+
+    .action-button {
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .action-button--close {
+      background-color: #ff594f;
+    }
+
+    .action-button--minimize {
+      background-color: #ffbc1b;
+    }
+
+    .action-button--maximize {
+      background-color: #00cd46;
+    }
+  }
+  .sidebar__nav {
+
+    .nav-list__item {
+      width: 150px;
+      height: 50px;
+      padding: 17px 15px;
+      text-align: center;
+      display: flex;
+
+      &:hover {
+        background-color: #292a48;
+        cursor: pointer;
+      }
+
+      .nav-list__link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .link-icon {
+          width: 16px;
+          height: 16px;
+          margin-right: 9px;
+        }
+
+        .text-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+          .link__label {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 50px;
+            color: #ffffff;
+            font-weight: 400;
+          }
+
+          .link__count {
+            font-family: 'Roboto Mono', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 50px;
+            color: #8a8995;
+          }
+        }
+      }
+    }
+    .nav-list__item--active {
+      background-color: #292a48;
+    }
+  }
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  background-color: #f6f6f6;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5px 20px 11px 15px;
+  box-sizing: border-box;
+  overflow: auto;
+
+  .issues-group {
+
+    .issues-group__date {
+      font-size: 12px;
+      letter-spacing: 0;
+      color: #8a8995;
+      font-weight: 400;
+      margin: 6px 0 5px;
+    }
+
+    .issues-group__list {
+      overflow: hidden;
+
+      .issues-group__item {
+        width: 465px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 11px 11px 12px;
+        margin: 5px 0;
+
+        .item-title {
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: 50px;
+          color: #080606;
+          font-weight: 400;
+        }
+
+        .item-favourite-icon {
+          svg {
+            fill: #ffffff;
+            stroke: #e0e0e0;
+            stroke-width: 1;
+          }
+        }
+
+        .item-favourite-icon.item-favourite-icon--active {
+          svg {
+            fill: #21233d;
+            stroke: none;
+            stroke-width: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Github issues app</title>
-</head>
-<body>
-  <h1>Github issues app</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Github issues app</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="sidebar">
+        <div class="sidebar__action-buttons">
+          <span class="action-button action-button--close"></span>
+          <span class="action-button action-button--minimize"></span>
+          <span class="action-button action-button--maximize"></span>
+        </div>
+        <div class="sidebar__nav">
+          <ul class="nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link">
+                <img src="assets/icon-github.svg" class="link-icon" alt="all issues icon" />
+                <div class="text-container">
+                  <div class="link__label">All</div>
+                  <div class="link__count">12</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">
+                <img src="assets/icon-open-issue.svg" class="link-icon" alt="open issues icon" />
+                <div class="text-container">
+                  <div class="link__label">Open</div>
+                  <div class="link__count">4</div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link">
+                <img src="assets/icon-closed-issue.svg" class="link-icon" alt="closed issues icon" />
+                <div class="text-container">
+                  <div class="link__label">Closed</div>
+                  <div class="link__count">8</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <main>
+        <div class="issues-group">
+          <div class="issues-group__date">19-07-2016</div>
+          <ul class="issues-group__list">
+            <li class="issues-group__item">
+              <div class="item-title">Page changes</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Review of last issues</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="issues-group">
+          <div class="issues-group__date">18-07-2016</div>
+          <ul class="issues-group__list">
+            <li class="issues-group__item">
+              <div class="item-title">Visual UI Update Review</div>
+              <a href="#" class="item-favourite-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Sidebar changes</div>
+              <a href="#" class="item-favourite-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="issues-group">
+          <div class="issues-group__date">15-07-2016</div>
+          <ul class="issues-group__list">
+            <li class="issues-group__item">
+              <div class="item-title">Crash update</div>
+              <a href="#" class="item-favourite-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Page visual UI Update Review</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Sidebar update</div>
+              <a href="#" class="item-favourite-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="issues-group">
+          <div class="issues-group__date">14-07-2016</div>
+          <ul class="issues-group__list">
+            <li class="issues-group__item">
+              <div class="item-title">Crash issues</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Visual update & Crash resolve</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Sidebar update</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="issues-group">
+          <div class="issues-group__date">13-07-2016</div>
+          <ul class="issues-group__list">
+            <li class="issues-group__item">
+              <div class="item-title">Page visual UI Update Review</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+            <li class="issues-group__item">
+              <div class="item-title">Sidebar update</div>
+              <a href="#" class="item-favourite-icon item-favourite-icon--active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="17" height="16" viewBox="0 0 17 16">
+                  <path d="M8.500,0.000 L11.301,5.028 L16.999,6.112 L13.033,10.302 L13.753,16.000 L8.500,13.561 L3.247,16.000 L3.967,10.302 L0.001,6.112 L5.699,5.028 L8.500,0.000 " />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
